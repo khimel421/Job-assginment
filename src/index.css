@@ -1,0 +1,121 @@
+/* font bebas neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .input-style {
+    @apply bg-transparent border p-2 w-full text-white 
+  }
+}
+
+
+
+
+
+/* Fonts ................ */
+
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.roboto{
+  font-family: "Roboto", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+
+.hero{
+  background: url('background-image.png');
+ 
+}
+
+.overlay{
+  background: linear-gradient(90deg, rgba(189, 31, 23, 0) 32.88%, rgba(189, 31, 23, 0.7) 100%);
+}
+
+.flipped-image {
+  transform: scaleX(-1);
+  transform-origin: center; /* Default is center */
+}
+
+.shadow{
+  box-shadow: 0px 7px 16px 0px #0000001A;
+}
+
+.tabs-container {
+  /* max-width: 600px; */
+  margin: auto;
+  font-family: Arial, sans-serif;
+  
+}
+
+.tabs {
+  display: flex;
+  width: 240px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  /* background-color: #f5f5f5; */
+  border: none;
+  /* border-bottom: 2px solid  #c5342a; */
+  transition: background-color 0.3s, border-bottom-color 0.3s;
+}
+
+.tab.active {
+  background-color: #c5342a;
+  color: white;
+  font-weight: bold;
+}
+
+/* .tab:hover {
+  background-color: #e9e9e9;
+} */
+
+.tab-content {
+  /* padding: 20px; */
+  background-color: #fff;
+  border-top: 2px solid  #c5342a;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.book-now{
+  background-image: url('/plate-spoon.jpeg');
+  background-size: 150% 100%; /* Scales image to cover the entire width */ /* Centers the image within the container */
+  background-repeat: no-repeat; /* Prevents tiling */
+  width: 100%;
+/* Makes the container full width */
+
+}
+
+.custom-placeholder::placeholder {
+  position: absolute;
+  left: 14px;
+  top: 18px;
+}
